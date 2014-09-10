@@ -17,5 +17,42 @@
                    <li><a href="kontakt.html">Kontakt</a></li>
                </ul>
     </nav>
+    <section>
+    <p>Obeservera! Detta är bara ett påhittat kontaktform.</p>
+        <form  id="form1" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
+            <fieldset id="1">
+                <legend>Skicka ett meddelande till mig</legend>
+                <p><label>Ditt namn:</label></p>
+                <p><input type="text" id="textboxName" name="Name" maxlenght="15"></input></p>
+                <p><label>Ditt efternamn:</label></p>
+                <p></label><input type="text" id="Surname" name="Surname" maxlenght="15"></input></p>
+                <p><label>Ämne:</label></p>
+                <p></label><input type="text" id="Subject" name="Subject" maxlenght="15"></input></p>
+                <p><label>Ditt meddelande:</label></p>
+                <p><textarea cols="50" rows="5" maxlength="250" name="Message"></textarea></p>
+                
+                <p>Vilken webbläsare använder du?
+                <select id="checkbox" name="Browser">
+                   <option value="ie" name="browser">Internet Explorer</option>
+                   <option value="chrome" name="browser" selected>Chrome</option>
+                   <option value="firefox" name="browser">Firefox</option>
+                   <option value="opera" name="browser">Opera</option>
+                   <option value="safari" name="browser">Safari</option>
+                </select>
+                </p>
+             </fieldset>    
+               
+            <fieldset id="2">
+                <legend>Kontakta mig via:</legend>
+                  <p><label> <input type="checkbox" name="kontakt[]" value="mail"> e-mail </label></p>
+                  <p><label> <input type="checkbox" name="kontakt[]" value="telefon"> telefon </label></p>
+                  <p><label> <input type="checkbox" name="kontakt[]" value="skype" checked> skype</label></p>
+            </fieldset>
+            
+            <p><input type=submit value="Skicka"></p>
+        
+    </form>
+    </section>
+    
     </body>
 </html>
