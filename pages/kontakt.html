@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="SV">
     <head>
-        <META charset="utf-8"/>
+        <meta charset="utf-8"/>
         <title>Kontakt</title>
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
         <header>
@@ -22,14 +23,14 @@
         <form  id="form1" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
             <fieldset id="1">
                 <legend>Skicka ett meddelande till mig</legend>
-                <p><label>Ditt namn:</label></p>
+                <p><label for="textboxName">Ditt namn:</label></p>
                 <p><input type="text" id="textboxName" name="Name" maxlength="15"></p>
-                <p><label>Ditt efternamn:</label></p>
-                <p><label><input type="text" id="Surname" name="Surname" maxlength="15"></label></p>
-                <p><label>Ämne:</label></p>
-                <p><label><input type="text" id="Subject" name="Subject" maxlength="15"></label></p>
-                <p><label>Ditt meddelande:</label></p>
-                <p><textarea cols="50" rows="5" maxlength="250" name="Message"></textarea></p>
+                <p><label for="Surname">Ditt efternamn:</label></p>
+                <p><input type="text" id="Surname" name="Surname" maxlength="15"></p>
+                <p><label for="Subject">Ämne:</label></p>
+                <p><input type="text" id="Subject" name="Subject" maxlength="15"></p>
+                <p><label for="area">Ditt meddelande:</label></p>
+                <p><textarea cols="50" rows="5" maxlength="250" name="Message" id="area"></textarea></p>
                 
                 <p>Vilken webbläsare använder du?
                 <select id="checkbox" name="Browser">
@@ -44,9 +45,9 @@
                
             <fieldset id="2">
                 <legend>Kontakta mig via:</legend>
-                  <p><label> <input type="checkbox" name="kontakt[]" value="mail"> e-mail </label></p>
-                  <p><label> <input type="checkbox" name="kontakt[]" value="telefon"> telefon </label></p>
-                  <p><label> <input type="checkbox" name="kontakt[]" value="skype" checked> skype</label></p>
+                  <p><label for="mail"> <input type="checkbox" name="kontakt[]" value="mail"> e-mail </label></p>
+                  <p><label for="telefon"> <input type="checkbox" name="kontakt[]" value="telefon"> telefon </label></p>
+                  <p><label for="skype"> <input type="checkbox" name="kontakt[]" value="skype" checked> skype</label></p>
             </fieldset>
             
             <p><input type=submit value="Skicka"></p>
