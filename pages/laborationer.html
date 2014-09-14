@@ -7,6 +7,7 @@
     </head>
 
 <body>
+<section class="container">
     <header>
         <h1>Min laborationsportal</h1>
         <p>Jasmins utbildningsportal</p>
@@ -21,7 +22,7 @@
                </ul>
     </nav>
     
-    <section>
+    <section class="main">
     <h2>Kurserna:</h2>
     <ul>
         <li><a href="#kurs1">Webbteknisk introduktion</a></li>
@@ -29,8 +30,8 @@
     </ul>
     
     
-<!--Öpnnar article tagg för varje ny kurs-->    
-        <article>
+<!--Öpnnar select tagg för varje ny kurs-->    
+        <section class="subject">
             <a id="kurs1"><h3>Webbteknisk introduktion</h3></a>
             <div>
                 <ul>
@@ -42,7 +43,7 @@
                     <li><a href="#projekt">Webbsideprojekt</a></li>
                 </ul>
             </div>
-            <section>
+            <article>
                 <h4>Resultat:</h4>
                 <table border='1'>
                     <thead>
@@ -109,8 +110,8 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
-            <section>
+            </article>
+            <article>
                 <a id="lab1"><h4>Laboration 1</h4></a>
                 <p>Uppgifter:</p>
                 <ol>
@@ -145,34 +146,38 @@
                     <li>Tabeller</li>
                     <li>Formulär</li>
                 </ol>
-            </section>
+            </article>
             
-<!--Öppnar section tagg för varje ny laboration-->            
-            <section>
+<!--Öppnar article tagg för varje ny laboration-->            
+            <article>
                 <a id="lab2"><h4>Laboration 2</h4></a>
                 <p>Uppgifter:</p>
-            </section>
-            <section>
+            </article>
+            <article>
                 <a id="lab3"><h4>Laboration 3</h4></a>
                 <p>Uppgifter:</p>
-            </section>
-            <section>
+            </article>
+            <article>
                 <a id="lab4"><h4>Laboration 4</h4></a>
                 <p>Uppgifter:</p>
-            </section>
-            <section>
+            </article>
+            <article>
                 <a id="lab5"><h4>Laboration 5</h4></a>
                 <p>Uppgifter:</p>
-            </section>
-            <section>
+            </article>
+            <article>
                 <a id="projekt"><h4>Webbsideprojekt</h4></a>
                 <p>Uppgifter:</p>
-            </section>
-        </article>
+            </article>
+        </section>
         
-        <article>
+        <section class="subject">
             <a id="kurs2"><h3>Inledande programmering med C#</h3></a>
-        </article>
+        </section>
+    </section>
+    <footer>
+                <p>Ansvarig för material på denna blogg är Jasmin Bejtovic</p>
+    </footer> 
     </section>
 </body>
 </html>
