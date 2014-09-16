@@ -56,9 +56,11 @@ Background article:DDCA69
 Background article header:CFAE1C
 Background article footer:
 Font colour:
+google fonts: font-family: 'Fredoka One', cursive;
 */
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url("pics/code-wallpaper.jpeg");
     background-color: #cccccc;
 }
@@ -74,13 +76,24 @@ ul,dl,ol{
 h2,h3,h4{
     color:#121B2A;
     padding-right:10%;
+    text-align:center;
 }
+h2{
+    font-size:1.3em;
+}
+h3
+{
+    font-size:1.15em;
+}
+
 h1{
-     padding-top:10%;
+     font-family: 'Fredoka One', cursive;
+     margin:10%;
      float:right;
 }
 p{
-    padding-left:3%;
+    margin:1%;
+    padding-left:1.5%;
     color:#121B2A;
 }
 
@@ -89,8 +102,8 @@ header {
     border-style: solid;
     border-width: 2px;
     border-color:#F5F2BA;
+    border-radius:1.2em;
     width:98%;
-    border-bottom-color:#121B2A;
     margin-top:1%;
     margin-left:auto;
     margin-right:auto;
@@ -113,9 +126,9 @@ section{
 article{
     border-style: dotted;
     border-width: 1px;
-    border-color:#F5F2BA;
+    border-color:#121B2A;
     margin:2%;
-    background-color:#DDCA69;
+    background-color:#F5F2BA;
 }
 
 section .subject{
@@ -138,6 +151,15 @@ nav{
     background-color: #121B2A;
 }
 
+a{
+    margin:3%;
+}
+a:link{color:#4C0000;text-decoration:none}
+a:visited{color:#4C0000;text-decoration:none;}
+a:focus{color:red;text-decoration:none;}
+a:hover{color:red;text-decoration:none;}
+a:active{color:white;text-decoration:none;}
+
 #menu a
 {
 display: block;
@@ -147,11 +169,11 @@ padding-top:3%;
 padding-bottom:3%;
 }
 
-#menu a:link{color:yellow;text-decoration:none;font-size:1.1em;}
-#menu a:visited{color:yellow;text-decoration:none;}
-#menu a:focus{color:yellow;background-color:#CFAE1C;text-decoration:none;border-style: solid;border-width: 2px;border-color:white;}
-#menu a:hover{color:blue;background-color:#CFAE1C;display:block;text-decoration:none;border-style:solid;border-width: 2px;border-color:white;}
-#menu a:active{color:white;text-decoration:none;}
+#menu a:link{margin:0;color:yellow;text-decoration:none;font-size:1.1em;}
+#menu a:visited{margin:0;color:yellow;text-decoration:none;}
+#menu a:focus{margin:0;color:yellow;background-color:#CFAE1C;text-decoration:none;border-style: solid;border-width: 2px;border-color:white;}
+#menu a:hover{margin:0;color:blue;background-color:#CFAE1C;display:block;text-decoration:none;border-style:solid;border-width: 2px;border-color:white;}
+#menu a:active{margin:0;color:white;text-decoration:none;}
 
 nav .active
 {
@@ -165,20 +187,22 @@ background-color: #414955;
 }
 
 section .main{
-    border-width: 3px;
-    border-color:#CFAE1C;
+    border-style: dotted;
+    border-width: 1px;
+    border-color:#F5F2BA;
     width:77%;
     margin-top:1%;
     margin-left:22%;
     margin-right:0.5%;
     margin-bottom:1%;
-    background-color:#F5F2BA;
+    background-color:#DDCA69;
 }
 
 footer{
     border-style: solid;
     border-width: 2px;
     border-color:#F5F2BA;
+    border-radius:1.2em;
     clear:both;
     width:98%;
     margin:1%;
