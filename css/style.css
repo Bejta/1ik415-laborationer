@@ -79,7 +79,9 @@ h2,h3,h4{
     text-align:center;
 }
 h2{
-    font-size:1.2em;
+    font-size:1.5em;
+    text-shadow: yellow 0.1em 0.1em 0.2em;
+    font-family: 'Fredoka One', cursive;
 }
 h3
 {
@@ -91,6 +93,7 @@ h3
     text-align:left;
     font-size:1.3em;
     text-shadow: white 0.1em 0.1em 0.2em;
+    /* I used shadow effect from example from www.w3.org*/
     font-family: 'Fredoka One', cursive;
 }
  .blog:before{
@@ -99,7 +102,14 @@ h3
     padding-bottom:0%;
     padding-top:3%;
 }
+
+ .prsentation{
+     font-size:1.1em;
+ }
 figure{
+    text-align:center;
+    font-size:0.7em;
+    font-style:italic;
     margin:5%;
 }
 
@@ -111,9 +121,12 @@ h1{
      font-size:1.8em;
 }
 p{
+    font-size:0.8em;
     margin:1%;
     padding-left:1.5%;
+    padding-right:1.5%;
     color:#121B2A;
+    line-height: 120%;
 }
 
 
@@ -176,7 +189,7 @@ a{
 a:link{color:#4C0000;text-decoration:none}
 a:visited{color:#4C0000;text-decoration:none;}
 a:focus{color:red;text-decoration:none;}
-a:hover{color:red;text-decoration:none;}
+a:hover{color:red;text-decoration:underline;}
 a:active{color:white;text-decoration:none;}
 
 #menu a
@@ -222,6 +235,8 @@ footer{
     border-width: 2px;
     border-color:#F5F2BA;
     border-radius:1.2em;
+    text-align:right;
+    font-size:0.7em;
     clear:both;
     width:98%;
     margin:1%;
