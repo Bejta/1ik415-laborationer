@@ -67,7 +67,7 @@ body {
 h{
     color:#121B2A;
     padding-left:10%;
-    padding-top:10%;
+    padding-top:5%;
 }
 ul,dl,ol{
     color:#121B2A;
@@ -79,17 +79,36 @@ h2,h3,h4{
     text-align:center;
 }
 h2{
-    font-size:1.3em;
+    font-size:1.2em;
 }
 h3
 {
-    font-size:1.15em;
+    margin:0%;
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left:2%;
+    padding-right:0%;
+    text-align:left;
+    font-size:1.3em;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-family: 'Fredoka One', cursive;
+}
+ .blog:before{
+    content: url("pics/icon25x25.png");
+    padding-right:16px;
+    padding-bottom:0%;
+    padding-top:3%;
+}
+figure{
+    margin:5%;
 }
 
 h1{
+     text-shadow: white 0.1em 0.1em 0.2em;
      font-family: 'Fredoka One', cursive;
      margin:10%;
      float:right;
+     font-size:1.8em;
 }
 p{
     margin:1%;
