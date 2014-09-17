@@ -24,7 +24,7 @@
                </ul>
     </nav>
     
-    <section class="main">
+    <section class="main" id="mainLab">
     <h2>Kurserna:</h2>
     <ul>
         <li><a href="#kurs1">Webbteknisk introduktion</a></li>
@@ -32,9 +32,9 @@
     </ul>
     
     
-<!--Öpnnar select tagg för varje ny kurs-->    
+<!--Öpnnar section tagg för varje ny kurs-->    
         <section class="subject">
-            <a id="kurs1"><h3>Webbteknisk introduktion</h3></a>
+            <h3 id="kurs1">Webbteknisk introduktion</h3>
             <div>
                 <ul>
                     <li><a href="#lab1">Laboration 1</a></li>
@@ -46,8 +46,10 @@
                 </ul>
             </div>
             <article>
+            <header class="headlab">
                 <h4>Resultat:</h4>
-                <table border='1'>
+            </header>
+                <table>
                     <thead>
                         <tr>
                            <th>Laboartion</th>
@@ -114,7 +116,9 @@
                 </table>
             </article>
             <article>
-                <a id="lab1"><h4>Laboration 1</h4></a>
+            <header class="headlab">
+                <h4 id="lab1">Laboration 1</h4>
+            </header>    
                 <p>Uppgifter:</p>
                 <ol>
                     <li>Utvecklingsmiljön</li>
@@ -152,29 +156,42 @@
             
 <!--Öppnar article tagg för varje ny laboration-->            
             <article>
-                <a id="lab2"><h4>Laboration 2</h4></a>
+                <header class="headlab">
+                <h4 id="lab2">Laboration 2</h4>
+                </header>
+                <p>Uppgifter:</p>
+            </article>
+            
+            <article>
+            <header class="headlab">
+                <h4 id="lab3">Laboration 3</h4>
+            </header>    
+                <p>Uppgifter:</p>
+            </article>
+            
+            <article>
+            <header class="headlab">
+                <h4 id="lab4">Laboration 4</h4>
+            </header>    
+                <p>Uppgifter:</p>
+            
+            </article>
+            <article>
+            <header class="headlab">
+                <h4 id="lab5">Laboration 5</h4>
+            </header>
                 <p>Uppgifter:</p>
             </article>
             <article>
-                <a id="lab3"><h4>Laboration 3</h4></a>
-                <p>Uppgifter:</p>
-            </article>
-            <article>
-                <a id="lab4"><h4>Laboration 4</h4></a>
-                <p>Uppgifter:</p>
-            </article>
-            <article>
-                <a id="lab5"><h4>Laboration 5</h4></a>
-                <p>Uppgifter:</p>
-            </article>
-            <article>
-                <a id="projekt"><h4>Webbsideprojekt</h4></a>
+            <header class="headlab">
+                <h4 id="projekt">Webbsideprojekt</h4>
+            </header>    
                 <p>Uppgifter:</p>
             </article>
         </section>
         
         <section class="subject">
-            <a id="kurs2"><h3>Inledande programmering med C#</h3></a>
+            <h3 id="kurs2">Inledande programmering med C#</h3>
         </section>
     </section>
     <footer>

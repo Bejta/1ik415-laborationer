@@ -26,9 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -81,9 +79,7 @@ h2,h3,h4{
     text-align:center;
     font-family: 'Fredoka One', cursive;
 }
-h4{
-    font-size:1.15em;
-}
+
 h2{
     font-size:1.5em;
     text-shadow: yellow 0.1em 0.1em 0.2em;
@@ -108,6 +104,24 @@ h3
     padding-bottom:0%;
     padding-top:3%;
 }
+
+h4{
+    margin:0%;
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left:2%;
+    padding-right:0%;
+    /*text-align:left;*/
+    font-size:1.15em;
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+/*.headlab:before{
+    content: url("pics/icon25x25.png");
+    padding-right:16px;
+    padding-bottom:0%;
+    padding-top:0%;
+}*/
 
  .presentation{
      font-size:1.1em;
@@ -299,5 +313,35 @@ video{
     border-color:#121B2A;
     border-style:solid;
     border-width:6px;
-    
+}
+table {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:5%;
+    margin-top:5%;
+    width:90%;
+    border-style:double;
+    border-color:orange;
+    border-width:5px;
+    padding:1%;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 1%;
+}
+
+th,td{
+    vertical-align:central;
+}
+th{
+    vertical-align:central;
+    background-color: #121B2A;
+    color:white;
+}
+td{
+   background-color: #414955;
+   color:white;
+   text-align:center;
+   vertical-align:middle;
 }
