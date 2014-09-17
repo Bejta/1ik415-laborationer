@@ -212,8 +212,8 @@ ul{
     list-style-type:none;
     margin:0;
 }
-#menu ul a{
 
+#menu ul a{
 font-size:1.3em;
 display: block;
 color: #CFAE1C;
@@ -273,7 +273,7 @@ footer{
 
 
 ol{
-    margin:4%;
+    margin:6%;
     list-style-type:decimal;
 }
 
@@ -290,4 +290,14 @@ video{
     margin-left:4%;
     margin-top:2%;
     margin-bottom:2%;
+}
+.right{
+    margin:3%;
+    width:350px;
+    height:233px;
+    float:right;
+    border-color:#121B2A;
+    border-style:solid;
+    border-width:6px;
+    
 }
