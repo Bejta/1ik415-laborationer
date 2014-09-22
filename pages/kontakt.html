@@ -26,17 +26,17 @@
         <form  id="form1" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
             <fieldset id="1">
                 <legend>Skicka ett meddelande till mig</legend>
-                <p><label for="textboxName">Ditt namn:</label></p>
-                <p><input type="text" id="textboxName" name="Name" maxlength="15"></p>
-                <p><label for="Surname">Ditt efternamn:</label></p>
-                <p><input type="text" id="Surname" name="Surname" maxlength="15"></p>
-                <p><label for="Subject">Ämne:</label></p>
-                <p><input type="text" id="Subject" name="Subject" maxlength="15"></p>
-                <p><label for="area">Ditt meddelande:</label></p>
-                <p><textarea cols="50" rows="5" maxlength="250" name="Message" id="area"></textarea></p>
+                <p><label for="textboxName">Ditt namn:</label>
+                <input type="text" id="textboxName" name="Name" maxlength="15"></p>
+                <p><label for="Surname">Ditt efternamn:</label>
+                <input type="text" id="Surname" name="Surname" maxlength="15"></p>
+                <p><label for="Subject">Ämne:</label>
+                <input type="text" id="Subject" name="Subject" maxlength="15"></p>
+                <p><label for="area">Ditt meddelande:</label>
+                <textarea cols="50" rows="5" maxlength="250" name="Message" id="area"></textarea></p>
                 
                 <p>Vilken webbläsare använder du?
-                <select id="checkbox" name="Browser">
+                <select id="dropdownbox" name="Browser">
                    <option value="ie" id="browser1">Internet Explorer</option>
                    <option value="chrome" id="browser2" selected>Chrome</option>
                    <option value="firefox" id="browser3">Firefox</option>
@@ -48,9 +48,9 @@
                
             <fieldset id="2">
                 <legend>Kontakta mig via:</legend>
-                  <p><label for="mail"> <input type="checkbox" name="kontakt[]" value="mail"> e-mail </label></p>
-                  <p><label for="telefon"> <input type="checkbox" name="kontakt[]" value="telefon"> telefon </label></p>
-                  <p><label for="skype"> <input type="checkbox" name="kontakt[]" value="skype" checked> skype</label></p>
+                  <p><label for="mail"> <input id="mail" type="checkbox" name="kontakt[]" value="mail"> e-mail </label></p>
+                  <p><label for="telefon"> <input id="telefon" type="checkbox" name="kontakt[]" value="telefon"> telefon </label></p>
+                  <p><label for="skype"> <input id="skype" type="checkbox" name="kontakt[]" value="skype" checked> skype</label></p>
             </fieldset>
             
             <p><input type=submit value="Skicka"></p>
