@@ -1,0 +1,279 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS for print
+   This link was helpfull http://www.webdesignerdepot.com/2010/01/10-tips-for-better-print-style-sheets/*/
+   
+body {
+    font-family: Georgia, serif;
+    background-color: white;
+}
+h{
+    color:black;
+    page-break-after: avoid;
+}
+ul,dl,ol{
+    color:#121B2A;
+}
+li{
+    color:#121B2A;
+}
+
+/*h2,h3,h4{
+    color:#121B2A;
+    padding-right:10%;
+    text-align:center;
+    font-family: 'Fredoka One', cursive;
+}*/
+
+h2{
+    font-size:1.3em;
+    }
+h3
+{
+    text-align:left;
+    font-size:1.2em;
+}
+h4{
+    font-size:1.15em;
+}
+
+ .presentation{
+     font-size:1em;
+ }
+figure{
+    page-break-inside:avoid;
+    text-align:center;
+    font-size:0.7em;
+    font-style:italic;
+    margin:5%;
+}
+
+h1{
+     margin:2%;
+     font-size:1.5em;
+}
+p{
+    font-size:1em;
+    color:gray;
+    margin:1%;
+    line-height: 120%;
+}
+
+header {
+    border-bottom-style:dotted;
+    border-bottom-color:#39B7CD;
+    border-bottom-width:1px;
+    width:98%;
+    margin-top:1%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:transparent;
+}
+section{
+    background-color:transparent;
+    width:98%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+article{
+    page-break-inside:avoid;
+    border-style: dotted;
+    border-width: 0.5px;
+    border-color:black;
+    margin:1%;
+    background-color:transparent;
+}
+
+/*section tag that, together with <nav> tag, makes the whole layout two-columned */
+section .subject{
+    width:98%;
+    margin:1%;
+    background-color:transparent;
+}
+
+/*Block with menu */
+nav{
+    display: none;
+}
+
+/*Links*/
+a{
+    margin:1%;
+    text-decoration:underline;
+    color:#39B7CD;
+    font-weight:bold;
+}
+.extern:link {content:" [" attr(href) "] "; color:blue;}
+.extern:after {content:" [" attr(href) "] ";color:blue;}
+.extern:visited {content:" [" attr(href) "] ";color:blue;}
+
+ul{
+    margin:5%;
+    font-size:0.9em;
+    list-style-type:circle;
+}
+
+section .main{
+    border-style: dotted;
+    border-width: 1px;
+    border-color:#F5F2BA;
+    width:98%;
+    margin:0.5%;
+
+}
+
+footer{
+    border-radius:1.2em;
+    text-align:right;
+    font-size:0.9em;
+    font-style:italic;
+    clear:both;
+    width:98%;
+    margin:1%;
+    background-color:transparent;
+}
+ol{
+    margin:6%;
+    list-style-type:decimal;
+}
+
+/* I used percentage, because with every new step in nesting font-size would decrease for 10%*/
+li { 
+    color:gray;
+    padding:0.5px;
+    font-size: 95%;
+    margin:0%;
+}
+dl{
+    font-size:0.9em;
+    margin-left:2%;
+}
+video{
+    margin-left:4%;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+.right{
+    margin:3%;
+    width:350px;
+    height:233px;
+    float:right;
+    border-color:#39B7CD;
+    border-style:solid;
+    border-width:2px;
+}
+table {
+    page-break-inside:avoid;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:5%;
+    margin-top:5%;
+    width:90%;
+    border-style:double;
+    border-color:black;
+    border-width:3px;
+    padding:1%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1%;
+}
+
+th,td{
+    vertical-align:central;
+}
+th{
+    vertical-align:central;
+    background-color: transparent;
+    color:#39B7CD;
+    font-weight:bold;
+}
+td{
+   background-color: gray;
+   color:black;
+   text-align:center;
+   vertical-align:middle;
+}
+
+fieldset{
+    max-width:80% !important;
+    margin:3%;
+    border-style:solid;
+    border-width:0.05em;
+}
+#2{
+    text-align:left;
+}
+legend{
+    margin-left:3%;
+    font-size:0.8em;
+}
+label{
+    display: inline-block;
+    text-align: right;
+    width:25%;
+    padding-right:2%;
+    margin-left:4%;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+textarea{
+    display: inline-block;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+input[type=checkbox]{
+    vertical-align: middle; 
+    margin-left: 50%;
+    text-align:left;
+}
+#dropdownbox{
+    margin:2%;
+}
+#area{
+    vertical-align:middle;
+}
