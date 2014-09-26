@@ -246,7 +246,7 @@ margin:0;
 #menu a:active{color:white;text-decoration:none;} /*Color is white because I wanted some very short "blitz" effect*/
 
 /*Styling menu item that indicates current page*/
-nav .active
+.active
 {
 border-style: dotted;
 border-width: 1px;
@@ -373,7 +373,7 @@ textarea{
 }
 input[type=checkbox]{
     vertical-align: middle; 
-    margin-left: 50%;
+    margin-left: 0%;
     float:left;
     text-align:left;
 }
