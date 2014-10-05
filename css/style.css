@@ -158,7 +158,8 @@ section{
     border-width: 3px;
     border-color:#F5F2BA;
     background-color:#121B2A;
-    width:960px;
+    width:70%;
+    /*width:960px;*/
     margin-left:auto;
     margin-right:auto;
     margin-top:2%;
@@ -306,6 +307,7 @@ dl{
     margin-left:2%;
 }
 video{
+    max-width:100%;
     margin-left:4%;
     margin-top:2%;
     margin-bottom:2%;
@@ -391,7 +393,7 @@ input[type=checkbox]{
 }
 
 
-/*CSS for animation*/
+/*CSS for animation. My source: http://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for-images-using-css3-and-html*/
 
 .first {
     margin-left:3%;

@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS for mobile devices*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("pics/code-wallpaper.jpeg");
+    background-color: #cccccc;
+}
+h{
+    color:#121B2A;
+    padding-left:10%;
+    font-family: 'Fredoka One', cursive;
+}
+ul,dl,ol{
+    color:#121B2A;
+}
+li{
+    color:#121B2A;
+}
+
+h2,h3,h4{
+    color:#121B2A;
+    padding-right:10%;
+    text-align:center;
+    font-family: 'Fredoka One', cursive;
+}
+
+h2{
+    font-size:1.5em;
+    text-shadow: yellow 0.1em 0.1em 0.2em;
+}
+h3
+{
+    margin:0%;
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left:2%;
+    padding-right:0%;
+    text-align:left;
+    font-size:1.3em;
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+/*All headers of blog-posts on index page are styled with an icon which belongs to the h3*/
+ .blog:before{
+    content: url("pics/icon25x25.png");
+    padding-right:16px;
+    padding-bottom:0%;
+    padding-top:3%;
+}
+
+h4{
+    margin:0%;
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left:2%;
+    padding-right:0%;
+    /*text-align:left;*/
+    font-size:1.15em;
+    text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+ .presentation{
+     font-size:1.1em;
+ }
+figure{
+    max-width:100%;
+    text-align:center;
+    font-size:0.7em;
+    font-style:italic;
+    margin:5%;
+}
+/*
+h1{
+     text-shadow: white 0.1em 0.1em 0.2em;
+     margin:10%;
+     float:right;
+     font-size:1.5em;
+}
+*/
+p{
+    font-size:0.9em;
+    margin:1%;
+    padding-left:1.5%;
+    padding-right:1.5%;
+    color:White;
+    /*color:#121B2A;*/
+    line-height: 120%;
+}
+header {
+    border-style: solid;
+    border-width: 2px;
+    border-color:#F5F2BA;
+    border-radius:1.2em;
+    width:98%;
+    margin-top:1%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#CFAE1C;
+}
+section{
+    border-style: solid;
+    border-width: 3px;
+    border-color:#F5F2BA;
+    background-color:#121B2A;
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    margin-bottom:2%;
+    opacity:0.8;
+}
+article{
+    border-style: dotted;
+    border-width: 1px;
+    border-color:#121B2A;
+    margin:2%;
+    /*background-color:#F5F2BA;*/
+}
+section .subject{
+    width:98%;
+    margin:1%;
+    background-color:#CFAE1C;
+}
+/*Block with menu */
+nav{
+    display: block;
+    border-style: dotted;
+    border-width: 1px;
+    border-color:white;
+    padding-top:5%;
+    padding-bottom:5%;
+    width:100%;
+    
+    text-align:left;
+    text-indent:8%;
+    margin-top:1%;
+    margin-left:1%;
+    background-color: #121B2A;
+}
+
