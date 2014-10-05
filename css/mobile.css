@@ -47,28 +47,36 @@ body {
     background-image: url("pics/code-wallpaper.jpeg");
     background-color: #cccccc;
 }
+header {
+    border-radius:1.2em;
+    width:98%;
+    /*margin-top:1%;*/
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#CFAE1C;
+}
 h{
     color:#121B2A;
-    padding-left:10%;
     font-family: 'Fredoka One', cursive;
 }
 ul,dl,ol{
-    color:#121B2A;
+    color:white;
 }
 li{
-    color:#121B2A;
+    color:white;
 }
 
 h2,h3,h4{
-    color:#121B2A;
+    color:#414955;
     padding-right:10%;
     text-align:center;
     font-family: 'Fredoka One', cursive;
 }
 
 h2{
-    font-size:1.5em;
-    text-shadow: yellow 0.1em 0.1em 0.2em;
+    color:#414955;
+    font-size:1.2em;
+    text-shadow: white 0.1em 0.1em 0.2em;
 }
 h3
 {
@@ -81,6 +89,15 @@ h3
     font-size:1.3em;
     text-shadow: white 0.1em 0.1em 0.2em;
 }
+h4{
+    margin:0%;
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left:2%;
+    padding-right:0%;
+    font-size:1.15em;
+    text-shadow: orange 0.1em 0.1em 0.2em;
+}
 
 /*All headers of blog-posts on index page are styled with an icon which belongs to the h3*/
  .blog:before{
@@ -90,64 +107,36 @@ h3
     padding-top:3%;
 }
 
-h4{
-    margin:0%;
-    padding-bottom:1%;
-    padding-top:1%;
-    padding-left:2%;
-    padding-right:0%;
-    /*text-align:left;*/
-    font-size:1.15em;
-    text-shadow: white 0.1em 0.1em 0.2em;
-}
+
 
  .presentation{
      font-size:1.1em;
  }
-figure{
-    max-width:100%;
-    text-align:center;
-    font-size:0.7em;
-    font-style:italic;
-    margin:2%;
-}
-/*
-h1{
-     text-shadow: white 0.1em 0.1em 0.2em;
-     margin:10%;
-     float:right;
-     font-size:1.5em;
-}
-*/
+
 p{
     font-size:0.9em;
     margin:1%;
     padding-left:1.5%;
     padding-right:1.5%;
     color:White;
-    /*color:#121B2A;*/
     line-height: 120%;
 }
 header {
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.5px;
     border-color:#F5F2BA;
     border-radius:1.2em;
     width:98%;
-    margin-top:1%;
     margin-left:auto;
     margin-right:auto;
     background-color:#CFAE1C;
 }
 section{
-    border-style: solid;
-    border-width: 3px;
     border-color:#F5F2BA;
     background-color:#121B2A;
 
     margin-left:auto;
     margin-right:auto;
-    margin-top:2%;
     margin-bottom:2%;
     
 }
@@ -161,25 +150,20 @@ section .subject{
     width:98%;
     margin:1%;
 }
-/*Block with menu */
-nav{
-    display: block;
-    border-style: dotted;
-    padding-top:3%;
-    padding-bottom:3%;
+
+section .main{
+    border-color:#F5F2BA;
     width:100%;
-    text-align:left;
-    text-indent:8%;
-    margin-top:1%;
-    margin-left:1%;
-    background-color: #121B2A;
+    margin-left:0;
+    margin-bottom:1%;
 }
+
 /*Links*/
 a{
     margin:1%;
 }
-a:link{color:#4C0000;text-decoration:none}
-a:visited{color:#4C0000;text-decoration:none;}
+a:link{color:orange;text-decoration:none}
+a:visited{color:orange;text-decoration:none;}
 a:focus{color:red;text-decoration:none;}
 a:hover{color:red;text-decoration:underline;}
 a:active{color:white;text-decoration:none;}
@@ -205,6 +189,17 @@ dl{
 }
 /*-----------end of lists----------*/
 
+/*-----------------MENU----------------------*/
+nav{
+    display: block;
+    border-style: dotted;
+    width:98%;
+    text-align:left;
+    text-indent:8%;
+    margin-top:1%;
+    margin-left:1%;
+    background-color: #121B2A;
+}
 
 /* Some properties for the menu which are valide for all possible events */
 #menu ul{
@@ -219,7 +214,7 @@ border-width: 1px;
 display: block;
 color: orange;
 font-weight:bold;
-text-indent:20%;
+/*text-indent:20%;*/
 text-decoration: none;
 border-color:white;
 background-color: #414955;
@@ -229,24 +224,20 @@ font-size:1.3em;
 display: block;
 color: #CFAE1C;
 text-decoration: none;
-padding-top:0%;
-padding-bottom:3%;
+padding-bottom:1%;
+padding-top:1%;
 padding-left:7%;
 padding-right:5%;
 margin:0;
 }
-section .main{
-    border-style: dotted;
-    border-width: 1px;
-    border-color:#F5F2BA;
-    width:100%;
-    margin-top:1%;
-    margin-left:0;
-    margin-right:0.5%;
-    margin-bottom:1%;
-}
+#menu a:link{color:yellow;} /* background:url("pics/sprite.png") 0 0 no-repeat;*/
+#menu a:visited{color:yellow;}
+#menu a:focus{color:yellow;background-color:#CFAE1C;border-style:solid;border-width: 2px;border-color:white;}
+#menu a:hover{color:blue;background-color:#CFAE1C;display:block;border-style:solid;border-width: 2px;border-color:white;}
+#menu a:active{color:white;text-decoration:none;}
+
 #menu  ul li a{background:url("pics/sprite.png") no-repeat}
-#menu  ul li.item1 a{background-position:0px -48px }
+#menu  ul li.item1 a{background-position:0px -48px}
 #menu  ul li.item1 a:hover{background-position:0px 0px}
 #menu  ul li.item2 a {background-position:0px -143px;}
 #menu  ul li.item2 a:hover{background-position:0px -95px;}
@@ -254,10 +245,12 @@ section .main{
 #menu  ul li.item3 a:hover{background-position:0px -191px;}
 #menu  ul li.item4 a {background-position:0px -335px;}
 #menu  ul li.item4 a:hover{background-position:0px -287px;}
+/*-------------------END OF MENU-------------------------*/
 
+/*----------Footer, background color is changed, and is identical as background of one cell in the table. Border colour is 1px instead of 2px--------*/
 footer{
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color:#F5F2BA;
     border-radius:1.2em;
     text-align:right;
@@ -266,37 +259,54 @@ footer{
     clear:both;
     width:98%;
     margin:1%;
-    background-color:#0066CC;
+    background-color:#414955;
 }
 
+
+/*--Video, Images and Figure elements----------------------------*/
 video{
     max-width:100%;
-    margin-left:4%;
-    margin-top:2%;
     margin-bottom:2%;
+}
+#logo{
+    padding-left:20%;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
 }
 img{
     max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+figure{
+    max-width:100%;
+    text-align:center;
+    font-size:0.7em;
+    font-style:italic;
+    margin:2%;
 }
 
+/*Figure element with class name "right" which is part of content of one blog post. In mobile css, float property is deleted, and max-width is 100%*/
 .right{
+    margin-top:2%;
     max-width:100%;
-    margin:3%;
     width:350px;
     height:233px;
-    float:right;
-    border-color:#121B2A;
+    border-color:white;
     border-style:solid;
-    border-width:6px;
+    border-width:2px;
 }
+/*-----------End of Video, Images and figure elements------------*/
+
+
 
 /*------------------style for table-----------*/
 table {
-    margin-left:auto;
-    margin-right:auto;
+   
     margin-bottom:5%;
     margin-top:5%;
-    width:90%;
+    width:100%;
     border-style:double;
     border-color:orange;
     border-width:5px;
@@ -306,7 +316,6 @@ th, td {
     border: 1px solid white;
     padding: 1%;
 }
-
 th,td{
     vertical-align:central;
 }
@@ -325,3 +334,46 @@ td{
 
 
 /*-----------------Style for form-----------------*/
+fieldset{
+    max-width:100%;
+    margin:3%;
+    border-style:solid;
+    border-width:0.05em;
+    color:white;
+}
+#2{
+    text-align:left;
+}
+legend{
+    margin-left:3%;
+    font-size:0.8em;
+    color:white;
+}
+label{
+    display: inline-block;
+    text-align: right;
+    width:25%;
+    padding-right:2%;
+    margin-left:4%;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+textarea{
+    display: inline-block;
+    margin-top:2%;
+    margin-bottom:2%;
+    max-width:100%;
+}
+input[type=checkbox]{
+    vertical-align: middle; 
+    margin-left: 0%;
+    float:left;
+    text-align:left;
+}
+#dropdownbox{
+    margin:2%;
+}
+#area{
+    vertical-align:middle;
+}
+/*-----------------Form style - END - -----------------*/
