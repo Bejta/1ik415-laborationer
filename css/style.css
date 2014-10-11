@@ -389,6 +389,58 @@ input[type=checkbox]{
     vertical-align:middle;
 }
 
+/* CSS for comments on index page*/
+h5{
+    display:block;
+    margin-left:3%;
+    background-color:#FFFFD6;
+    margin-right:3%;
+}
+.area2{
+   max-width:100%;
+   width:100%;
+   height:40%;
+}
+
+.field2{
+    width:90%;
+    max-width:100%;
+}
+
+.commentsheader{
+    margin:0;
+    display:block;
+    float:left;
+    width:30%;
+    border:0;
+    border-radius:0;
+    margin-left:6%;
+    background-color:#414955;
+    color:white;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+}
+.commentsFooter{
+    margin-left:6%;
+    width:30%;
+    text-align:left;
+    border:0;
+    border-radius:0;
+    margin-right:3%;
+    background-color:#414955;
+    color:white;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+}
+.sectionComments{
+    width:90%;
+    border:0;
+    margin-bottom:2%;
+    background-color:#FFFFD6;
+    font-size:0.9em;
+    font-style:italic;
+}
+
 
 /*CSS for animation. My source: http://www.joomla-monster.com/blog/web-development/an-animated-hover-effect-for-images-using-css3-and-html*/
 
