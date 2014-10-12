@@ -402,9 +402,13 @@ h5{
    height:40%;
 }
 
+
+
 .field2{
+    border:0;
     width:90%;
     max-width:100%;
+    background-color:#FFFFD6;
 }
 
 .commentsheader{
@@ -439,6 +443,18 @@ h5{
     background-color:#FFFFD6;
     font-size:0.9em;
     font-style:italic;
+}
+/*hCard*/
+.photo{
+    display:block;
+    width:40%;
+    margin-left:2%;
+    max-height:100%;
+    overflow:hidden;
+}
+.category ,.adr, .vcard, .org, .email, .url{
+    margin-left:2%;
+    text-align:left;
 }
 
 
