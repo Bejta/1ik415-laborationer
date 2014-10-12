@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS for Gallery*/
+
+body{
+    background-color:#C1DAD6;
+}
+main{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+a{
+    vertical-align:top;
+    text-decoration:none;
+    background: white;
+    display: inline-block;
+    position: relative;
+    width:15%;
+    margin:0.2%;
+    padding:0.3%;
+    color:#793030;
+    box-shadow: 10px 10px 5px #888888;
+    transform:rotate(3deg);
+    transition:All .5s linear;
+}
+a:after {
+     font-family: 'Reenie Beanie', cursive;
+     font-size:1.6em;
+     text-align:center;
+     display: block;
+     padding: 2%;
+     content: attr(title);
+}
+a img {
+    width: 100%;
+}
+
+a:nth-child(3n){
+    transform:rotate(10deg);
+    font-size:1.3em;
+}
+a:nth-child(4n){
+    transform:rotate(-8deg);
+    color:#0a7e47;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration:bold;
+}
+a:nth-child(14n){
+    transform:rotate(-6deg);
+}
+a:hover, a:focus{
+    transform: scale(1.9);
+    box-shadow: 10px 10px 20px #888888;
+     z-index:1;
+}
+
+
+
