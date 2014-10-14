@@ -57,14 +57,24 @@ a{
     text-decoration:none;
     background: white;
     display: inline-block;
-    position: relative;
+    position: relative;/* Helps for google Chrome*/
     width:15%;
     margin:0.2%;
     padding:0.3%;
     color:#793030;
     box-shadow: 10px 10px 5px #888888;
+    -webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
     transform:rotate(3deg);
-    transition:All .5s linear;
+    
+/* As far as I understand this, it helpt to get seen in every browser*/    
+    -webkit-transition: All 0.7s linear;
+	-moz-transition: All 0.7s linear;
+	-o-transition: All 0.7s linear;
+	/*  ---end---*/
+	
+    transition:All 0.7s linear;
 }
 a:after {
      font-family: 'Reenie Beanie', cursive;
@@ -72,26 +82,47 @@ a:after {
      text-align:center;
      display: block;
      padding: 2%;
-     content: attr(title);
+     content: attr(title); /*Displays attribute title*/
 }
 a img {
     width: 100%;
 }
 
+
+/* Transforme every 3rd,4th and 14th link so it gives randomize effect. I could use (3n+3) to go
+   three rounds (or more if I wish). I could do the thing on more elements, and go many rounds, it will
+   give complete random effect (as it will be impossible to understand the pattern) but somehow it´s still fake random effect,
+   because I can influence it*/
 a:nth-child(3n){
+    -webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
     transform:rotate(10deg);
     font-size:1.3em;
 }
 a:nth-child(4n){
+    -webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
     transform:rotate(-8deg);
     color:#0a7e47;
     font-family: 'Permanent Marker', cursive;
     text-decoration:bold;
 }
 a:nth-child(14n){
+    -webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
     transform:rotate(-6deg);
 }
+/*  End */
+
+/* scale zooms in or out (under 1 zooms out)*/
+/* z-index 1 has higher priority, and everything else is shown behind. Perfect for my example*/
 a:hover, a:focus{
+    -webkit-transform:scale(1.9);
+	-moz-transform: scale(1.9);
+	-o-transform: scale(1.9);
     transform: scale(1.9);
     box-shadow: 10px 10px 20px #888888;
      z-index:1;
