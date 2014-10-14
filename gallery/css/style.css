@@ -57,7 +57,7 @@ a{
     text-decoration:none;
     background: white;
     display: inline-block;
-    position: relative;/* Helps for google Chrome*/
+    position: relative;/* z-index for Chrome*/
     width:15%;
     margin:0.2%;
     padding:0.3%;
@@ -69,12 +69,15 @@ a{
     transform:rotate(3deg);
     
 /* As far as I understand this, it helpt to get seen in every browser*/    
-    -webkit-transition: All 0.7s linear;
-	-moz-transition: All 0.7s linear;
-	-o-transition: All 0.7s linear;
-	/*  ---end---*/
-	
-    transition:All 0.7s linear;
+    -webkit-transition: All 0.7s linear; /* Chrome, Safari, Opera http://www.w3schools.com/cssref/css3_pr_transform.asp */
+	-moz-transition: All 0.7s linear;/* Firefox*/
+	-o-transition: All 0.7s linear;/* Opera */
+
+    transition:All 0.7s linear; 
+    /* All to apply on all parts of tag, image, title, e.t.c. 
+    0.7 duration of transition in seconds,
+    linear-transition is the same all the duration (easy-out would make end part of transition slower)
+    delay (default value is 0) the time before transition takes place.*/
 }
 a:after {
      font-family: 'Reenie Beanie', cursive;
@@ -117,14 +120,16 @@ a:nth-child(14n){
 }
 /*  End */
 
-/* scale zooms in or out (under 1 zooms out)*/
-/* z-index 1 has higher priority, and everything else is shown behind. Perfect for my example*/
+/* scale zooms in or out (under 1 zooms out) https://developer.mozilla.org/en-US/docs/Web/CSS/transform*/
+/* It is possible to scale on x and y 
+/* z-index 1 has higher priority. Question, What if I use 10 for example?*/
+/* box-shadow changes*/
 a:hover, a:focus{
     -webkit-transform:scale(1.9);
 	-moz-transform: scale(1.9);
 	-o-transform: scale(1.9);
     transform: scale(1.9);
-    box-shadow: 10px 10px 20px #888888;
+    box-shadow: 10px 10px 20px #888888;/* Blur property is bigger, and it gives feeling that picture goes away from the area*/
      z-index:1;
 }
 
